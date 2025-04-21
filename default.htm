@@ -1,0 +1,24 @@
+<a href="/details.php">Details</a><br>
+<a href="/scripts/php/adminer/adminer-4-sqlite3.php">Adminer SQLite</a><br>
+<a href="/scripts/php/adminer/adminer-current.php">Adminer Normal</a><br>
+<br>
+<br>
+../../../bcms/db/2024-bubblelite.db <br>
+I Am Legend OK
+
+server {
+    listen 80;
+    server_name webite-helper.com;
+
+    root /var/www/html;
+    index index.php index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php8.3-fpm.sock;
+    }
+}
