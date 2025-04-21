@@ -1,11 +1,8 @@
-## web-app
+## Website Helper
 
-Template for a simple PHP web application hosten on Kestrel and ASP.NET Core pipeline.
+Simple PHP Distributed CMS.
 
 ### How to run
-1. Install peachpie templates
-2. `dotnet new web -lang PHP`
-3. `dotnet restore`
-4.  Modify `Website/index.php` (optional)
-5. `cd Server`
-6. `dotnet run`
+1. Download installer zip
+2. Upzip into your website directory
+3. Run index.php
